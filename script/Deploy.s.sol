@@ -7,7 +7,7 @@ import '@script/Registry.s.sol';
 
 import {Script} from 'forge-std/Script.sol';
 import {Common} from '@script/Common.s.sol';
-import {MainnetParams} from '@script/corn/MainnetParams.s.sol';
+import {MainnetParams} from '@script/MainnetParams.s.sol';
 
 /// @dev replace later, or activate BTCN for approval
 import {MintableERC20} from '@contracts/for-test/MintableERC20.sol';
