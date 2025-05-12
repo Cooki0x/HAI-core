@@ -50,7 +50,7 @@ contract DeployMainnet is MainnetParams, Deploy {
 
   function setupEnvironment() public virtual override updateParams {
     // Set systemCoin
-    systemCoin = address(new MintableERC20('BTCN', 'BTCN', 18));
+    systemCoin = new MintableERC20('BTCN', 'BTCN', 18);
 
     // Deploy oracle factories
     delayedOracleFactory = new DelayedOracleFactory();

@@ -67,7 +67,7 @@ abstract contract Contracts {
   mapping(bytes32 => ICollateralAuctionHouse) public collateralAuctionHouse;
 
   // --- Token contracts ---
-  address public systemCoin;
+  MintableERC20 public systemCoin;
   mapping(bytes32 => IERC20Metadata) public collateral;
   ICoinJoin public coinJoin;
   mapping(bytes32 => ICollateralJoin) public collateralJoin;

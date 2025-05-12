@@ -44,4 +44,8 @@ contract MintableERC20 is IERC20Metadata, ERC20 {
   function mint(address _usr, uint256 _wei) external {
     _mint(_usr, uint256(uint192(_wei)));
   }
+
+  function burn(uint256 _amount) external {
+    _burn(msg.sender, _amount);
+  }
 }
